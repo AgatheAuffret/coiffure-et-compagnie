@@ -3,14 +3,14 @@
 ************************************************************************************ */
 @font-face {
     font-family: 'aaarghnormal';
-    src: url('../font/Aaargh-webfont.woff') format('woff');
+    src: url('font/Aaargh-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'black_jackregular';
-    src: url('../font/blackjack-webfont.woff') format('woff');
+    src: url('font/blackjack-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -104,7 +104,7 @@ header {
 }
 
 .banner {
-    background-image: url("../img/models-3740597_1920.jpg");
+    background-image: url("img/models-3740597_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -258,7 +258,7 @@ span {
 
     .banner_mobile {
         display: flex;
-        background-image: url("../img/models-3740597_1920.jpg");
+        background-image: url("img/models-3740597_1920.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
