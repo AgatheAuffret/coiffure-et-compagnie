@@ -3,14 +3,14 @@
 ************************************************************************************ */
 @font-face {
     font-family: 'aaarghnormal';
-    src: url('../font/Aaargh-webfont.woff') format('woff');
+    src: url('font/Aaargh-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'black_jackregular';
-    src: url('../font/blackjack-webfont.woff') format('woff');
+    src: url('font/blackjack-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -100,7 +100,7 @@ nav input[type=checkbox]:checked~ul {
 .prestations {
     height: 500px;
     max-height: 500px;
-    background-image: url(./img/7723.jpg);
+    background-image: url(img/7723.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 500px;
