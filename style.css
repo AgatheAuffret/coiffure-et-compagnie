@@ -1,0 +1,309 @@
+/* ************************************************************************************
+                                    FONTS
+************************************************************************************ */
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('../font/Aaargh-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('../font/blackjack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ************************************************************************************
+                                    BODY
+************************************************************************************ */
+body {
+    margin: 0;
+    /* width: 100vw; */
+    background-color: rgb(236, 236, 236);
+}
+
+/* ************************************************************************************
+                                    MENU
+************************************************************************************ */
+nav {
+    font-family: sans-serif;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul {
+    margin: 0px;
+    padding: 0 100px;
+}
+
+nav>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav li {
+    list-style-type: none;
+
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    /* width: 10rem; */
+    text-align: center;
+}
+
+nav>ul>li>a {
+    padding: 20px 20px;
+    color: rgb(224, 224, 224);
+    font-family: "aaarghnormal";
+}
+
+.menu:hover a {
+    background-color: rgba(253, 183, 195, 0.603);
+    color: rgb(224, 224, 224);
+}
+
+.menu-mobile {
+    color: #fff;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    padding: 12px 0;
+    display: none;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+nav input[type=checkbox]:checked~ul {
+    display: block;
+}
+
+/* ************************************************************************************
+                                    BANNER
+************************************************************************************ */
+header {
+    height: 500px;
+    max-height: 500px;
+}
+
+.banner {
+    background-image: url("../img/models-3740597_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    background-position: 0px -150px;
+}
+
+.banner img {
+    vertical-align: middle;
+}
+
+.banner_mobile {
+    display: none;
+}
+
+/* ************************************************************************************
+                                    PRESENTATION
+************************************************************************************ */
+.grosTitre {
+    text-align: center;
+    font-family: "black_jackregular";
+    color: rgb(90, 90, 90);
+    font-size: 3rem;
+}
+
+.paragraphe {
+    text-align: center;
+    color: rgb(27, 27, 27);
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "aaarghnormal";
+}
+
+/* ************************************************************************************
+                                    RESEAUX
+************************************************************************************ */
+.reseaux a img {
+    width: 7rem;
+    margin: 0 50px;
+}
+
+.logo2 {
+    border-radius: 26%;
+}
+
+.reseaux a img:hover {
+    filter: opacity(0.8);
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.reseaux {
+    margin: 20px 0;
+}
+
+/* ************************************************************************************
+                                    FOOTER
+************************************************************************************ */
+.sidebar {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-family: "aaarghnormal";
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ************************************************************************************
+                                    COORDONNEES
+************************************************************************************ */
+
+span {
+    font-weight: bold;
+}
+
+.coord {
+    text-align: center;
+    color: rgb(27, 27, 27);
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: "aaarghnormal";
+    margin: auto;
+}
+
+.presentation,
+.coordonnees,
+.reseaux {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.carte {
+    text-align: center;
+}
+
+/* ************************************************************************************
+                                    RESPONSIVE
+************************************************************************************ */
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* **********************navigation********************* */
+    nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .menu-mobile {
+        display: block;
+        top: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li,
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a,
+    nav ul li:hover a {
+        padding: 10px 0px 10px 0px;
+    }
+
+    nav li:hover .submenu {
+        display: block;
+        position: static;
+    }
+
+    /* **********************header***********************/
+    header {
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .banner_mobile {
+        display: flex;
+        background-image: url("../img/models-3740597_1920.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        line-height: 500px;
+        justify-content: center;
+        background-position: 0px -10px;
+        height: auto;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    /* **********************section****************************** */
+    .paragraphe, .coord {
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .grosTitre {
+        font-size: 2rem;
+    }
+
+    .logos a img {
+        margin: 0;
+        width : 90px
+    }
+
+    .logos {
+        justify-content: space-around;
+    }
+
+    .carte {
+        display: none;
+    }
+
+    .presentation,
+    .coordonnees,
+    .reseaux {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .coord{
+        width: 80%;
+    }
+}
